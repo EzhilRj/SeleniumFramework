@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" >
+    <listeners>
+        <listener class-name="com.tmb.Listeners.TestListeners"></listener>
+    </listeners>
+    <test parallel="methods" thread-count="2" name="Selenium Framework">
+        <classes>
+            <class name="com.tests.HomePageTest"/>
+            <class name="com.tests.PaymentTest"/>
+        </classes>
+    </test>
+</suite>
